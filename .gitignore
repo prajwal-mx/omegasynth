@@ -1,0 +1,47 @@
+# Build outputs
+build/
+omegasynth
+omegasynth_syntcomp.pyc
+
+# Fuzzing / generated artifacts
+scratch_fuzz/
+*.ehoa.tmp
+*.gm.tmp
+
+# Large generated games (keep repo lean; regenerate via benchmarks/)
+# Note: curated examples/ are kept (including Jurdzinski demos).
+jgame_knor_expanded.gm
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# External / vendored solvers (GPL tools, fetch separately)
+external/
+StarExecSYNTCOMP/
+benchmarks/official_parity/
+benchmarks/syntcomp/
+backup/
+
+# Editors / OS
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+.vscode/
+.idea/
+*.o
+*.a
+*.so
+
+# Docker / secrets
+.env
+*.key
+*.pem
